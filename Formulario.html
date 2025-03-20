@@ -5,3 +5,63 @@
     <title>Formulario de cadastro</title>
 </head>
 <body>
+    <h1>Introduçao do Formulario</h1>
+    <p>Segue aqui o furmulario para cadastro</p>
+
+    <form action="" method="post">
+    <!-- Seção: de informações Pessoais -->
+     <h2>Informações pessoais</h2>
+     <label for="nome">Nome:</label><br>
+     <input type="text" id="nome" name="nome" placeholder="Escreva seu nome completo" required><br><br>
+
+     <label for="email">E-mail:</label><br>
+     <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+     <label for="senha">Senha:</label><br>
+     <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><br><br>
+
+    <label>Gênero></label>
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Masculino</label><br>
+    <input type="radio" id="feminino" name="genero" value="feminino">
+    <label for="feminino">Feminino</label><br>
+    <input type="radio" id="outros" name="genero" value="outros">
+    <label for="outros">Outros</label><br>
+
+    <!-- Seção: endereço -->
+     <h2>Endereço</h2>
+     <label for="endereço">Endereço</label><br>
+     <input type="text" id="endereço" name="endereço" placeholder="Digite seu endereço"><br><br>
+
+     <label for="estado">Estado</label><br>
+     <select name="estado" id="estado">
+     <option value="SC">Santa Catarina</option>
+     <option value="RJ">Rio de Janeiro</option>
+     <option value="RS">Rio Grande do Sul</option>
+</select><br><br>
+
+<!-- Seção: Preferencias -->
+<h2>Preferencias</h2>
+<label>Área de interesse</label>
+<input type="checkbox" id="tecnologia" name="área de interesse" value="tecnologia">
+<label for="tecnologia">Tecnologia</label><br>
+<input type="checkbox" id="esportes" name="área de interesse" value="esportes">
+<label for="esportes">Esportes</label><br>
+<input type="checkbox" id="leitura" name="área de interesse" value="leitura">
+<label for="leitura">Leitura</label><br><br>
+
+<!-- Seção: Comentários -->
+ <h2>Comentários</h2>
+ <label for="browser">Escolha seu Browser:</label><br>
+ <select name="browser" id="browser">
+ <option value="chrome">Google chrome</option>
+ <option value="safari">Safari</option>
+ <option value="firefox">Mozilla Firefox</option>
+</select><br><br>
+
+<!-- Botões para Enviar e Resetar -->
+ <button type="submit">Enviar Formulário</button>
+ <button type="reset">Resetar Formulário</button>
+</form>
+</body>
+</html>
